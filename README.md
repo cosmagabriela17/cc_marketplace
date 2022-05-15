@@ -8,12 +8,14 @@ Aplicația EasyBox folosește pentru backend framework-ul SpringBoot, iar pentru
 # 2.	Descriere problemă  <br /> #
 Am creat aplicația web pentru a putea ușura munca clienților de a-ași găsi coletul într-un anumit pick-up point. Din aplicația web EasyBox poți descoperi ușor în ce locație este comanda ta cu ajutorul Google Maps API prin introducerea codului tău unic de client.  <br />
 # 3.	Descriere API  <br /> #
- ![image](https://user-images.githubusercontent.com/56314118/168478771-3941960f-c5e5-4b91-b7ad-f404d32f966e.png)
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/56314118/168478771-3941960f-c5e5-4b91-b7ad-f404d32f966e.png">
+</p>
 
 Primul API utilizat este cel de conectare la baza de date pe care l-am utilizat în partea de backend a aplicației și a fost utilizat în application.properties, fișier de configurare specific frameworkului spring. Capturi de ecran legat de acest API sunt prezentate mai jos.  <br />
-
- ![image](https://user-images.githubusercontent.com/56314118/168478781-9b1355ef-8e54-4507-b830-86c440955149.png)
-
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/56314118/168478781-9b1355ef-8e54-4507-b830-86c440955149.png">
+</p>
 Cel de-al doilea API utilizat este Google Maps API, Maps JavaScript API pentru a putea utiliza Google Maps. 
 JavaScript Maps API permite personalizarea hărțile cu propriul conținut și imagini pentru afișare pe pagini web și dispozitive mobile. API-ul JavaScript Maps oferă patru tipuri de hărți de bază (vedere din satelit, satelit, hibrid și teren) care pot fi modificate folosind straturi și stiluri, controale și evenimente și diverse servicii și biblioteci.  <br />
 
