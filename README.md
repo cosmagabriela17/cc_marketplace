@@ -4,6 +4,7 @@ Linkuri:  <br />
 Github backend: https://github.com/cosmagabriela17/cc_marketplace   <br />
 Github frontend: https://github.com/cosmagabriela17/cc_marketplace  <br />
 Heroku app: https://easybox-ruxandra.herokuapp.com/  <br />
+Link youtube: https://youtu.be/ct-0Arp-kQg
 Aplicația EasyBox folosește pentru backend framework-ul SpringBoot, iar pentru frontend framework-ul Angular. În cadrul aplicației s-a folosit o bază de date MySQL stocată în serviciul de cloud Google Cloud. Tot din Google Cloud am folosit și Google Maps API, Maps JavaScript API pentru a putea încărca harta.  <br />
 # 2.	Descriere problemă  <br /> #
 Am creat aplicația web pentru a putea ușura munca clienților de a-ași găsi coletul într-un anumit pick-up point. Din aplicația web EasyBox poți descoperi ușor în ce locație este comanda ta cu ajutorul Google Maps API prin introducerea codului tău unic de client.  <br />
