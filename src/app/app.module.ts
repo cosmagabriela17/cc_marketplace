@@ -19,6 +19,7 @@ import { MapComponent } from './map/map.component';
 import { OrderListComponent } from './list/order-list/order-list.component'
 import { MatDialogModule } from '@angular/material/dialog';
 import { ErrorHandlingComponent } from './error/error-handling/error-handling.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { ErrorHandlingComponent } from './error/error-handling/error-handling.co
     MatIconModule,
     MatInputModule,
     GoogleMapsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
     
   ],
   providers: [

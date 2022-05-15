@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
 import { MapComponent } from 'src/app/map/map.component';
 import { ErrorHandlingComponent } from 'src/app/error/error-handling/error-handling.component';
+import { User } from 'src/app/models/User';
 
 @Component({
   selector: 'app-order-list',
@@ -24,7 +25,7 @@ export class OrderListComponent implements OnInit {
   displayedColumns: string[] = ['orderId', 'value', 'numberOfProducts', 'locationName'];
   dataSource: any;
   message : string;
-  
+  userProfile : User;
   ngOnInit(): void {
   }
   
@@ -32,23 +33,24 @@ export class OrderListComponent implements OnInit {
         console.log(1);
         this._coordonates_service.setCoordinates(new Coordinates(_longitude, _latitude));
         const dialogRef = this.dialog.open(MapComponent);
-        dialogRef.afterClosed().subscribe(result => {
-          console.log(`Dialog result: ${result}`);
-        });
    };
   onClick() {
     this._fetch_data.getOrderList(this.clientId).subscribe((data: Order[]) => {
       this.dataSource = data;
-      console.log(data);
-      this.exists = true;
+      if(data.length == 0) {
+        const dialogRef = this.dialog.open(ErrorHandlingComponent);
+      } else {
+        this.exists = true;
+      }
     }, (err: Error) => {
       this.error = true;
        const dialogRef = this.dialog.open(ErrorHandlingComponent);
-        dialogRef.afterClosed().subscribe(result => {
-          console.log(`Dialog result: ${result}`);
-        });
       });
     
-  }
+  this._fetch_data.getUser(this.clientId).subscribe((data: User) => {
+    this.userProfile = data;
+  });
+  
+}
 
 }
