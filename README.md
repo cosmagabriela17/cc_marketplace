@@ -1,7 +1,7 @@
  # 1.	Introducere  <br /> #
 	
 Linkuri:  <br />
-Github backend: https://github.com/cosmagabriela17/cc_marketplace   <br />
+Github backend: https://github.com/cosmagabriela17/backend-marketplace   <br />
 Github frontend: https://github.com/cosmagabriela17/cc_marketplace  <br />
 Heroku app: https://easybox-ruxandra.herokuapp.com/  <br />
 Link youtube: https://youtu.be/ct-0Arp-kQg  <br />
